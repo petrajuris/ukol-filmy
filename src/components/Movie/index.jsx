@@ -4,6 +4,9 @@ import "./style.css";
 const Movie = ({ title, poster, year, rating, director, genre, cast }) => (
   <div className="container">
     <div className="poster">
+      <div className="rating">
+        {rating} /10
+      </div>
       <img src={`/assets/${poster}`} alt="Poster" className="image" />
     </div>
     <div className="info">

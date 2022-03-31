@@ -8,17 +8,31 @@
       "poster cast";
     height: 200px;
     width: 250px;
+    background-color: white;
+    margin: 1px;
   }
 
   .title {color: red; font-weight: bold;}
 
   .info-text {font-size: 10px;}
 
-  .image { height: 100%; }
+  .image { width: 120px; }
   
-  .poster { grid-area: poster; }
+  .poster { grid-area: poster; position: relative; overflow: hidden;}
   
   .info { grid-area: info; }
   
   .cast { grid-area: cast; }
   
+  .rating {
+    background-color: orange;
+    text-align: center;
+    position: absolute;
+    width: 100px;
+    transform: rotate(-45deg);
+    left: -27px;
+    top: 10px;
+    opacity: 0.9;
+    font-size: 10px;
+    color: aliceblue;
+  }
